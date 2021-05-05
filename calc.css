@@ -1,0 +1,86 @@
+
+.container{
+    display:grid; 
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:   1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "result result result result"
+    "result result result result"
+    "cancel cancel modulo division"
+    "number7 number8 number9 multiplication"
+    "number4 number5 number6 soustraction"
+    "number1 number2 number3 addition"
+    "number0 number0 virgule egal"
+    ;
+    background-color: black;
+}
+div{
+    border: 1px solid white;
+    color: red;
+    text-align:center;
+  
+
+    
+    
+}
+
+.result{
+    grid-area: result;
+
+}
+.addition{
+    grid-area: addition;
+}
+.soustraction{
+    grid-area: soustraction;
+}
+.division{
+    grid-area: division
+}
+.multiplication{
+    grid-area: multiplication;
+}
+.modulo{
+    grid-area: modulo;
+}
+.virgule{
+    grid-area: virgule;
+}
+.egal{
+    grid-area: egal;
+}
+.cancel{
+    grid-area: cancel;
+}
+.number0{
+    grid-area: number0;
+}
+.number1{
+    grid-area: number1;
+}
+.number2{
+    grid-area: number2;
+}
+.number3{
+    grid-area: number3;
+}
+.number4{
+    grid-area: number4;
+}
+.number5{
+    grid-area: number5;
+}
+.number6{
+    grid-area: number6;
+}
+.number7{
+    grid-area: number7;
+}
+.number8{
+    grid-area: number8;
+}
+.number9{
+    grid-area: number9;
+}
+
