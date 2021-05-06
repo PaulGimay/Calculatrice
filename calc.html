@@ -6,41 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./calc.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=B612&display=swap" rel="stylesheet">
     <title>Calculatrice</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="result">result
-            <p id ="Nb1">Nb1</p>
-            <p id ="operater">operater</p>
-            <p id ="Nb2">Nb2</p>
-            <p id=resultat>resultat</p>
-            <!-- Nb1 -->
-            <!-- operater -->
-            <!-- Nb2 -->
-            <!-- resultat -->
-           
+        <div class="result">
+            <input type="text" id=resultat></input>
         </div>
-        <div class="addition">+</div>
-        <div class="soustraction">-</div>
-        <div class="multiplication">*</div>
-        <div class="division">/</div>
-        <div class="modulo">%</div>
-        <div class="virgule">.</div>
-        <div class="egal">=</div>
-        <div class="cancel">C</div>
-        <div class="number0">0</div>
-        <div class="number1">1</div>
-        <div class="number2">2</div>
-        <div class="number3">3</div>
-        <div class="number4">4</div>
-        <div class="number5">5</div>
-        <div class="number6">6</div>
-        <div class="number7">7</div>
-        <div class="number8">8</div>
-        <div class="number9">9</div>
+        <div class="addition touche" data-button="chiffre" data-translate="+">+</div>
+        <div class="soustraction touche" data-button="chiffre" data-translate="-">-</div>
+        <div class="multiplication touche" data-button="chiffre" data-translate="*">*</div>
+        <div class="division touche" data-button="chiffre" data-translate="/">/</div>
+        <div class="modulo touche" data-button="chiffre" data-translate="%">%</div>
+        <div class="virgule touche" data-button="chiffre" data-translate=".">,</div>
+        <div class="egal touche" data-button="egal" data-translate="=">=</div>
+        <div class="cancel touche" data-button="cancel" data-translate="cancel">C</div>
+        <div class="number0 touche" data-button="chiffre" data-translate="0">0</div>
+        <div class="number1 touche" data-button="chiffre" data-translate="1">1</div>
+        <div class="number2 touche" data-button="chiffre" data-translate="2">2</div>
+        <div class="number3 touche" data-button="chiffre" data-translate="3">3</div>
+        <div class="number4 touche" data-button="chiffre" data-translate="4">4</div>
+        <div class="number5 touche" data-button="chiffre" data-translate="5">5</div>
+        <div class="number6 touche" data-button="chiffre" data-translate="6">6</div>
+        <div class="number7 touche" data-button="chiffre" data-translate="7">7</div>
+        <div class="number8 touche" data-button="chiffre" data-translate="8">8</div>
+        <div class="number9 touche" data-button="chiffre" data-translate="9">9</div>
     </div>
+
+    <script src="./calc.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,11 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
     display:grid; 
-    height: 100vh;
+    height: 85vh;
+    width: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows:   1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
@@ -13,90 +17,165 @@
     "number1 number2 number3 addition"
     "number0 number0 virgule egal"
     ;
-    background-color: black;
+    background-color: cadetblue;
+    font-family: 'B612', sans-serif;
+    box-shadow: 10px 10px 3px grey;
+    margin: 0 auto;
+    padding: 20px;
 }
+body{
+    /* background-image: linear-gradient(to bottom right, rebeccapurple, purple); */
+    height: 100vh;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 div{
     border: 1px solid white;
     color: red;
     text-align:center;
-  
-
-    
-    
+    border-radius: 20px;
+    font-size: 20px;
+    margin:4%;
+    font-size: 25px;
+    display:flex;
 }
 
 .result{
     grid-area: result;
-
+    background-color:white;
+    color: purple;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 2%;
+    box-shadow: 2px 2px 2px black;
 }
+#resultat{
+    border: 1px solid grey;
+    margin-right: 0;
+    width: 99%;
+    height: 100%;
+    font-size: 30px;
+   border: 0px;
+   text-align: end;
+   
+}
+.touche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: red;
+    background-color: #04AA6D;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+}
+
+
+.touche:active {
+    background-color: purple;
+    box-shadow: 1 1px #666;
+    transform: translateY(3px);
+  }
+
 .addition{
     grid-area: addition;
+    background-color: black;
+    color: white;
 }
 .soustraction{
     grid-area: soustraction;
+    background-color: black;
+    color: white;
+
 }
 .division{
-    grid-area: division
+    grid-area: division;
+    background-color: black;
+    color: white;
+
 }
 .multiplication{
     grid-area: multiplication;
+    background-color: black;
+    color: white;
+
 }
 .modulo{
     grid-area: modulo;
+    background-color: black;
+    color: white;
+
 }
 .virgule{
     grid-area: virgule;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+
 }
 .egal{
     grid-area: egal;
+    background-color: green;
+    font-size: 50px;
 }
 .cancel{
     grid-area: cancel;
+    background-color: rgb(65, 65, 189);
+    font-size: 25px;
+    padding: 15px 25px;
 }
 .number0{
     grid-area: number0;
+    background-color: black;
+    font-size: 25px;
 }
 .number1{
     grid-area: number1;
+    background-color: black;
+   
 }
 .number2{
     grid-area: number2;
+    background-color: black;
 }
 .number3{
     grid-area: number3;
+    background-color: black;
 }
 .number4{
     grid-area: number4;
+    background-color: black;
 }
 .number5{
     grid-area: number5;
+    background-color: black;
 }
 .number6{
     grid-area: number6;
+    background-color: black;
 }
 .number7{
     grid-area: number7;
+    background-color: black;
 }
 .number8{
     grid-area: number8;
+    background-color: black;
 }
 .number9{
     grid-area: number9;
-}
-#Nb1{
-    border: 1px solid green;
-    color: white;
-}
-#operater{
-    border: 1px solid green;
-    color: white;
-}
-#Nb2{
-    border: 1px solid green;
-    color: white;
+    background-color: black;
 }
 #resultat{
-    border: 1px solid green;
-    color: white;
+    color: purple;
 }
 
