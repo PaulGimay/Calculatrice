@@ -10,9 +10,15 @@ myResult.forEach(element => {
         resultat.value = eval(resultat.value)
     })
 });
+
 const clear = document.querySelectorAll('div[data-button="cancel"]');
 clear.forEach(element => {
     element.addEventListener('click', function () {
         resultat.value = ""
     })
-});
+})
+
+
+
+
+
